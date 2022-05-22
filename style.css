@@ -9,11 +9,11 @@
 
 @font-face {
     font-family: 'American Captain';
-    src: url('/assets/fnt/American\ Captain.ttf');
+    src: url('./assets/fnt/American\ Captain.ttf');
   }
 
 html {
-    background: url('/assets/img/waldemar-brandt-eIOPDU3Fkwk-unsplash_2100x1400.webp') no-repeat center center fixed;
+    background: url('./assets/img/waldemar-brandt-eIOPDU3Fkwk-unsplash_2100x1400.webp') no-repeat center center fixed;
     background-size: cover;
 }
 
