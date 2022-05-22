@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>TOP - Sign Up Form</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <h1>Sign Up Form</h1>
+    <main>
+        <img src="/assets/img/odin-lined.png" alt="odin logo" class="odin-logo">
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus aspernatur laudantium illo maxime corporis natus maiores aperiam, sapiente porro neque minus a id, omnis quis! Optio alias iste ipsam sapiente consequuntur animi ab suscipit nostrum incidunt voluptatem est, vero ea expedita nam quae nulla. Quo magni iure ratione enim!</p>
+        <form action="http://httpbin.org/post" method="post">
+            <div>
+                <label for="first_name">first name</label>
+                <input type="text" name="first_name" id="first_name" required autofocus>
+            </div>
+            <div>
+                <label for="last_name">last name</label>
+                <input type="text" name="last_name" id="last_name" required>
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="phone">phone</label>
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+            <div>
+                <label for="passw">password</label>
+                <input type="password" name="passw" id="passw" required>
+            </div>
+            <div>
+                <label for="confirmpassw">confirm password</label>
+                <input type="password" name="confirmpassw" id="confirmpassw" required>
+            </div>
+            <input type="submit" value="create account" class="submit" id="btn-submit">
+        </form>
+        <p class="login">already have an account? <a href="http://www.theodinproject.com" target="_blank">Log in</a></p>
+        <p class="credit">background image from <a href="https://unsplash.com" target="_blank">unsplash</a> by <a href="https://unsplash.com/es/@waldemarbrandt67w" target="_blank">@waldemarbrandt67w</a></p>
+        
+    </main>
 </body>
 </html>

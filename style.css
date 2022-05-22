@@ -1,3 +1,145 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+}
+
+@font-face {
+    font-family: 'American Captain';
+    src: url('/assets/fnt/American\ Captain.ttf');
+  }
+
+html {
+    background: url('/assets/img/waldemar-brandt-eIOPDU3Fkwk-unsplash_2100x1400.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
 h1 {
-    color: rebeccapurple;
+    color: black;
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px;
+    opacity: 0.9;
+    font-family: 'American Captain';
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.odin-logo {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+
+.info {
+    margin-bottom: 3rem;
+}
+
+main {
+    background-color: beige;
+    opacity: 0.95;
+    padding: 2rem;
+    
+    border-radius: 10px;
+    width: 640px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+}
+
+.submit {
+    text-transform: capitalize;
+    background-color: darkgoldenrod;
+    padding: 1rem 0 1rem 0;
+    border: 0;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    align-self: end;
+    justify-self: start;
+}
+
+.submit:hover {
+    scale: 1.1;
+    filter: hue-rotate(5%);
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    outline: 4px solid darkgoldenrod;
+}
+
+/* input:invalid {
+    background-color: lightcoral;
+} */
+
+
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+.credit {
+    text-align: right;
+    opacity: 0.3;
+}
+
+
+@media (max-width: 1200px) {
+
+    h1 {
+        min-width: 340px;
+    }
+
+    main {
+        height: auto;
+        width: auto;
+        min-width: 340px;
+        
+        /* display: block; */
+        /* margin: auto 1rem; */
+    }
+
+    form {
+        gap: 0;
+        grid-template-columns: max-content;
+        margin: auto;
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+
+    .submit {
+        margin-top: 3rem;
+        justify-self: center;
+    }
+
+    .credit,
+    .login {
+        text-align: center;
+    }
 }
